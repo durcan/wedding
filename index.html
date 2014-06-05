@@ -24,7 +24,7 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="#">Navigation</a>
+            <li class="sidebar-brand"><a href="#top">Navigation</a>
             </li>
             <li><a href="#top">Home</a>
             </li>
@@ -93,14 +93,14 @@
                         <div class="col-md-3 text-center">
                             <div class="service-item">
                                 <i class="service-icon fa fa-plane"></i>
-                                <h4>Plane</h4>
+                                <h4>By Plane</h4>
                                 <p>The nearest airports to Pasadena are Los Angeles International Airport (LAX) and Bob Hope Airport in Burbank (BUR).  We recommend guests to rent cars or take taxis or Supershuttle to their hotels.</p>
                             </div>
                         </div>
                         <div class="col-md-2 text-center">
                             <div class="service-item">
                                 <i class="service-icon fa">BUR</i>
-                                <h4> Los Angeles International Airport</h4>
+                                <h4>Bob Hope Airport </h4>
                                 <ul class="fa-ul text-left">
 
                                   <li><i class="fa-li fa fa-angle-double-right fa-1"></i>Super Shuttle 800-258-3826; fee: $23 (one way); reservation required</li>
@@ -111,7 +111,7 @@
                       <div class="col-md-3 text-center">
                         <div class="service-item">
                             <i class="service-icon fa">LAX</i>
-                            <h4> Bob Hope Airport</h4>
+                            <h4> Los Angeles International Airport</h4>
                             <ul class="fa-ul text-left">
 
                               <li><i class="fa-li fa fa-angle-double-right fa-1"></i>Super Shuttle 800-258-3826; fee: $25 (one way); reservation required</li>
@@ -316,36 +316,7 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/d3.min.js"></script>
 <script src="js/util.js"></script>
-<!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
-<script>
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-</script>
-<script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-</script>
-<script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-</script>
 
 </body>
 
