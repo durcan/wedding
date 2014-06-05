@@ -9,7 +9,7 @@ function nameUpdate(n) {
 	var fdata = range(1, Number(n));
 
 	var inp = d3.select('#form-name-list').selectAll('.form-group')
-				.data(fdata)
+				.data(fdata);
 
 	inp.enter().append("div")
 				.attr("class", "form-group")
@@ -22,11 +22,9 @@ function nameUpdate(n) {
 				.attr("class", "form-control")
 				.attr("placeholder", function (d) {return "Full Name " + d; })
 				.append("p")
-				.attr("class", "help-block")
-	inp.exit().remove()
+				.attr("class", "help-block");
+	inp.exit().remove();
 
-	return inp
-
-
+	return inp;
 
 }
