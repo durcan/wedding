@@ -142,6 +142,7 @@ body {
 
 .service-item {
   margin-bottom: 15px;
+  font-family: sans-serif;
 }
 
 i.service-icon {
@@ -154,6 +155,11 @@ i.service-icon {
   line-height: 136px;
   vertical-align: middle; 
   text-align: center;
+
+}
+
+i.fa-envelope {
+	color: IndianRed;
 }
 
 #tandl a:{color: #CD5C5C;}
