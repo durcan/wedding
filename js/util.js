@@ -8,12 +8,12 @@ function range(start, count) {
 function nameUpdate(n) {
 	var fdata = range(1, Number(n));
 
-	var inp = d3.selectAll('#form-name-list').selectAll('.form-name')
+	var inp = d3.select('#form-name-list').selectAll('.form-group')
 				.data(fdata)
 
 	inp.enter().append("div")
 				.attr("class", "form-group")
-				.attr('class', 'form-name')
+				.attr('id', function (d) {return 'form-name' + d})
 				.append("div")
 				.attr("class", "controls")
 				.append("input")
