@@ -292,3 +292,11 @@ i.scroll:hover {
   }
 
 }
+
+
+.fa-spin-slow {
+  -webkit-animation: spin 20s infinite linear;
+  -moz-animation: spin 20s infinite linear;
+  -o-animation: spin 20s infinite linear;
+  animation: spin 20s infinite linear;
+}
